@@ -32,11 +32,17 @@ or
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 프로젝트 배포
 ```
 yarn run build
 or
 npm run build
+```
+### 프로젝트 배포한 파일 실행해보기
+```
+sudo npm install -g http-server
+cd dist/
+http-server
 ```
 
 ### Run your tests
