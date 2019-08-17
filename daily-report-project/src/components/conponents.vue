@@ -22,9 +22,6 @@ export default {
       seen: false
     }
   }
-  // props: {
-  //   msg: String
-  // }
 }
 </script>
 

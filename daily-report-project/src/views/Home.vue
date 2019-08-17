@@ -9,9 +9,9 @@
 
 <script>
 // @은 /src의 별칭이다.
-import HelloWorld from '@/components/conponents1.vue'
-import Conponents from '@/components/conponents2.vue';
-import Conponents3 from '@/components/conponents3.vue';
+import HelloWorld from '@/components/conponents.vue'
+import Conponents from '@/components/show+bind.vue';
+import Conponents3 from '@/components/class+style.vue';
 
 export default {
   name: 'home',
