@@ -1,17 +1,17 @@
 <template>
-  <div class="about">
-    <Vfor />
+  <div class="v-on">
+    <Von/>
   </div>
 </template>
 
 <script>
   // @은 /src의 별칭이다.
-  import Vfor from '@/components/v-for.vue';
+  import Von from '@/components/v-on.vue';
 
   export default {
 
     components: {
-      Vfor
+      Von
     }
   }
 </script>
