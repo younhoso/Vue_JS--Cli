@@ -59,5 +59,38 @@ or
 npm run lint
 ```
 
+### 생성 creation
+```
+- beforeCreate
+    data와 event가 세팅되지 않아 data에 접근이 불가
+- created
+    data, event 세팅되어 접근 가능
+    api에서 데이터를 받아 data에 전달하는 등의 초반 동작 수행
+```
+
+### 마운트 mounting
+```
+- beforeMount
+    첫 렌더링이 일어나기 직전
+- mounted
+    렌더링 후. 컴포넌트, 템플릿에 접근 가능
+```
+
+### 업데이트 updating
+```
+- beforeUpdate
+    데이터가 변경되어 다시 렌더링될 때
+- updated
+    데이터가 변경되어 렌더링된 이후
+```
+
+### 소멸, 해체 Destruction
+```
+- beforeDestroy
+    소멸되기 전에 호출
+- destroyed
+    소멸된 후 호출
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

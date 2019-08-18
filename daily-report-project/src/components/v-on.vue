@@ -1,8 +1,7 @@
 <template>
     <div>
         <!-- v-on: 이벤트 -->
-        <button @click.once="undateScore(1)">클릭하세요</button>
-
+        <button @click="undateScore(1)">클릭하세요</button>
         <!-- 
             v-on: 이벤트.수식어 종류 
             .stop
@@ -13,7 +12,6 @@
         -->
 
         <input @keyup.enter="keyup">
-
         <!-- 
             v-on:이벤트.키수식어 종류 
             .enter
@@ -32,9 +30,14 @@
 
 <script>
     export default {
+        data() {
+            return {
+                score: 0
+            }
+        },
         methods: {
-            undateScore(scrore) {
-                console.log(scrore);
+            undateScore(score) {
+                console.log('score');
             },
             keyup() {
                 console.log('key');

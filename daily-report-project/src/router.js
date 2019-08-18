@@ -26,5 +26,20 @@ export default new Router({
       name: 'v-on',
       component: () => import(/* webpackChunkName: "v-on" */ './views/v-on.vue')
     },
+    {
+      path: '/method',
+      name: 'method',
+      component: () => import(/* webpackChunkName: "method" */ './views/method.vue')
+    },
+    {
+      path: '/computed',
+      name: 'computed',
+      component: () => import(/* webpackChunkName: "computed" */ './views/computed.vue')
+    },
+    {
+      path: '/input',
+      name: 'input',
+      component: () => import(/* webpackChunkName: "input" */ './views/input.vue')
+    }
   ]
 })
