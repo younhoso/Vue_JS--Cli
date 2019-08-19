@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>{{ msg }}</h1>
     <h2>{{ author }}</h2>
     <p>age: {{age * 2}}</p>
@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'HelloWorld',
-  data(){
+   data(){
     return {
       msg: '반갑습니다.',
       author: 'boot',
@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<!-- "scoped"는 해당 component에만 제안적으로 적용이 된다. -->
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 h3 {
   margin: 40px 0 0;

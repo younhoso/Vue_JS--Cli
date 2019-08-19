@@ -23,12 +23,41 @@
     export default {
         data() {
             return {
+                score: 0,
                 msg: '반갑습니다.',
                 author: 'bob',
                 age: 20,
                 seen: false
             }
-        }
+        },
+        beforeCreate(){
+            console.log('beforCreate');
+            console.log(this.score);
+        },
+        created(){
+            console.log('create');
+            console.log(this.score);
+        },
+        beforeMount() {
+            console.log('beforMount');
+            console.log(this.score);
+        },
+        mounted(){
+            console.log('mounted');
+            console.log(this.score);
+        },
+        beforUpdate(){
+            console.log('beforUpdate');
+        },
+        update() {
+            console.log('update');
+        },
+        beforDestroy(){
+            console.log('beforDestroy');
+        },
+        destroyed(){
+            console.log('destroyed');
+        },
     }
 </script>
 

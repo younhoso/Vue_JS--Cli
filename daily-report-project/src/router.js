@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Conponents from './components/1.conponents.vue'
 
 Vue.use(Router)
 
@@ -10,36 +10,44 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'conponents',
+      component: Conponents
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/show-bind',
+      name: 'show-bind',
+      component: () => import(/* webpackChunkName: "show-bind" */ './components/2.show+bind.vue')
+    },
+    {
+      path: '/class-style',
+      name: 'class-style',
+      component: () => import(/** webpackChunkName: "class-style" */ './components/3.class+style.vue')
+    },
+    {
+      path: '/v-for',
+      name: 'v-for',
+      component: () => import(/** webpackChunkName: "v-for" */ './components/4.v-for.vue')
     },
     {
       path: '/v-on',
       name: 'v-on',
-      component: () => import(/* webpackChunkName: "v-on" */ './views/v-on.vue')
+      component: () => import(/** webpackChunkName: "v-on" */ './components/5.v-on.vue')
     },
     {
       path: '/method',
       name: 'method',
-      component: () => import(/* webpackChunkName: "method" */ './views/method.vue')
+      component: () => import(/** webpackChunkName: "method" */ './components/6.method.vue')
     },
     {
       path: '/computed',
       name: 'computed',
-      component: () => import(/* webpackChunkName: "computed" */ './views/computed.vue')
+      component: () => import(/** webpackChunkName: "computed" */ './components/7.computed.vue')
     },
     {
-      path: '/input',
-      name: 'input',
-      component: () => import(/* webpackChunkName: "input" */ './views/input.vue')
+      path: '/form',
+      name: 'form',
+      component: () => import(/** webpackChunkName: "form" */ './components/8.form.vue')
     }
+
   ]
 })

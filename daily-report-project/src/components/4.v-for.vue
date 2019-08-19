@@ -24,7 +24,6 @@
                     {id: 3, name: 'green', age: '20', title: 'Mow the lawn'},
                     {id: 3, name: 'yeelow', age: '60', title: 'Do the dishes'},
                 ],
-
                 persons: {
                     name: 'bob',
                     age: '25',
