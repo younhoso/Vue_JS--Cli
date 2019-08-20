@@ -28,9 +28,6 @@
                  </li>
                  
              </ul>
-            
-            <!-- <router-link to="/about">달력</router-link> |
-            <router-link to="/about">About</router-link> -->
         </nav>
     </div>
 </template>
